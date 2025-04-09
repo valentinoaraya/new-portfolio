@@ -1,0 +1,17 @@
+button {
+    border: none;
+    border-radius: 5px;
+    padding: .8rem 1rem;
+    cursor: pointer;
+}
+
+.primary {
+    color: var(--negro);
+    background-color: var(--rosa);
+}
+
+.secondary {
+    color: var(--rosa);
+    background-color: transparent;
+    border: 1px solid var(--rosa);
+}

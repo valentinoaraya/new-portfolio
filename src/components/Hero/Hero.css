@@ -1,0 +1,41 @@
+.hero {
+    margin: 5rem 0;
+}
+
+.heroContent {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.titleHero {
+    font-size: 3rem;
+    font-weight: 500;
+
+    span {
+        font-style: italic;
+        font-size: 3.2rem;
+    }
+}
+
+.subtitleHero {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--rosa);
+}
+
+.descriptionHero {
+    margin: 1rem 0;
+}
+
+.heroButtons {
+    margin: 1rem 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.heroNetworks {
+    margin: 1rem 0;
+    display: flex;
+    gap: 1rem;
+}
