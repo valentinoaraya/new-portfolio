@@ -22,6 +22,7 @@
     font-size: 2rem;
     font-weight: 400;
     color: var(--rosa);
+    font-style: italic;
 }
 
 .descriptionHero {

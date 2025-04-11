@@ -14,11 +14,6 @@ const Button: React.FC<Props> = ({ children, styleButton, onClick, color, arrow 
         <button
             onClick={onClick}
             className={styleButton}
-            style={{
-                backgroundColor: styleButton === "primary" ? color : "",
-                borderColor: styleButton === "secondary" ? color : "",
-                color: styleButton === "secondary" ? color : "",
-            }}
         >
             {children}
             {

@@ -1,0 +1,40 @@
+.contact {
+    margin: 5rem 0;
+}
+
+.titleContact {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.parrafContact {
+    margin: 1rem 0;
+}
+
+.cardsContact {
+    margin: 5rem 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.cardContact {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    border: 1px solid var(--rosa);
+    gap: 1.5rem;
+    border-radius: 10px;
+}
+
+.titleCard {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.subtitleCard {
+    color: var(--rosa);
+}

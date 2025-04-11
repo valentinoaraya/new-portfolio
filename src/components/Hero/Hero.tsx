@@ -32,21 +32,21 @@ const Hero = () => {
                         onClick={() => console.log("Llevar a red social")}
                         width="25"
                         height="25"
-                        fill="#E2CFEA"
+                        fill="#ffff"
                     />
                     <LinkedInIcon
                         cursorPointer
                         onClick={() => console.log("Llevar a red social")}
                         width="25"
                         height="25"
-                        fill="#E2CFEA"
+                        fill="#ffff"
                     />
                     <InstagramIcon
                         cursorPointer
                         onClick={() => console.log("Llevar a red social")}
                         width="25"
                         height="25"
-                        fill="#E2CFEA"
+                        fill="#ffff"
                     />
                 </div>
             </div>

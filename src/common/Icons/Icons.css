@@ -1,0 +1,7 @@
+.iconHover {
+    transition: all .2s ease-in-out;
+}
+
+.iconHover:hover {
+    fill: var(--rosa);
+}

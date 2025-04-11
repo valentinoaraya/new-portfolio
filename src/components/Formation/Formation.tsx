@@ -28,7 +28,8 @@ const Formation = () => {
                         <h3 className='year'>2023 Hoy</h3>
                         <div className='timeLinePoint'></div>
                         <div className='timeLineContent'>
-                            <h3 className='title'>UTN - Ingeniería en Sistemas</h3>
+                            <h3 className='title'>Universidad Tecnológica Nacional</h3>
+                            <p className="subtitle">Ingeniería en Sistemas de la Información</p>
                             <p>Ya en el tercer año de cursado puedo decir que me está gustando mucho la carrera. Aprendí Python en el primer año, mientras que en el segundo año lo seguimos profundizando, también estamos aprendiendo otros lenguajes como Java y C++ entre otros temas interesantes que se dictan en la carrera.</p>
                         </div>
                     </div>

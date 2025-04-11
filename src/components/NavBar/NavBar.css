@@ -28,4 +28,9 @@
 .section {
     font-size: .8rem;
     cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.section:hover {
+    color: var(--rosa);
 }
