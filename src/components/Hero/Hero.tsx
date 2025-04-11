@@ -15,6 +15,7 @@ const Hero = () => {
                     <Button
                         onClick={() => console.log("Acción de botón")}
                         styleButton="primary"
+                        arrow
                     >
                         Ver currículum
                     </Button>
