@@ -73,10 +73,11 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className="box ventatrack-box ventatrack-image-box" style={{ gridArea: "box-4" }}>
-                        <div>
+                        <div className="image-container">
                             <img className="imageVentaTrack" src={panelVentaTrack} alt="Panel de VentaTrack" />
                             <Technologies position="end" technologies={["react", "firebase",]} borderRadius="" />
                         </div>
+
                     </div>
                     <div className="box ventatrack-box data-ventatrack-box" style={{ gridArea: "box-5" }}>
                         <div className="dataVentaTrack">
