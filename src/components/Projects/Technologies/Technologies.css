@@ -1,0 +1,29 @@
+.technologies-container {
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: end;
+    gap: 1rem;
+    padding: 1rem;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(0, 0, 0, 0.5) 30%,
+            rgba(0, 0, 0, 0.25) 60%,
+            rgba(0, 0, 0, 0.1) 80%,
+            rgba(0, 0, 0, 0.05) 90%,
+            transparent 100%);
+}
+
+.technology-icon {
+    width: 30px;
+    height: 30px;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+    transition: transform 0.2s ease;
+}
+
+.technology-icon:hover {
+    transform: scale(1.1);
+}

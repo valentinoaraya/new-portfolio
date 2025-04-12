@@ -4,7 +4,7 @@ import { ArrowIcon } from "../Icons/Icons";
 interface Props {
     children: React.ReactNode;
     styleButton: "primary" | "secondary";
-    onClick: () => void;
+    onClick?: () => void;
     color?: string;
     arrow?: boolean;
 }

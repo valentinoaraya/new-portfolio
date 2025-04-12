@@ -6,6 +6,7 @@ import panelVentaTrack from "../../assets/images/panelImage.png"
 import panelTurnero from "../../assets/images/calendarioDoctor.webp"
 import sportyMaxxPage from "../../assets/images/sportymaxxPage.png"
 import SelectRepository from "./SelectRepository/SelectRepository";
+import Technologies from "./Technologies/Technologies";
 import { useState } from "react";
 
 const Projects = () => {
@@ -20,30 +21,30 @@ const Projects = () => {
                 <div className="bentoProjects">
                     <div className="box bookify-box" style={{ gridArea: "box-1" }}>
                         <h2 className="titleProject">Bookify</h2>
-                        <p className="description bookifyDescription">Es una plataforma para que empresas puedan gestionar los turnos de sus clientes de manera efectiva.</p>
+                        <p className="description">Es una plataforma para que empresas puedan gestionar los turnos de sus clientes de manera efectiva.</p>
                     </div>
                     <div className="box bookify-box features-bookify-box" style={{ gridArea: "box-2" }}>
                         <div className="featuresBookify">
                             <div className="featureBookify">
                                 <DollarIcon
-                                    width="40"
-                                    height="40"
+                                    width="30"
+                                    height="30"
                                     fill="white"
                                 />
                                 <h3 className="titleFeatureBookify">Cobro de señas</h3>
                             </div>
                             <div className="featureBookify">
                                 <CashStackIcon
-                                    width="40"
-                                    height="40"
+                                    width="30"
+                                    height="30"
                                     fill="white"
                                 />
                                 <h3 className="titleFeatureBookify">Sistema de reembolsos</h3>
                             </div>
                             <div className="featureBookify">
                                 <BellIcon
-                                    width="40"
-                                    height="40"
+                                    width="30"
+                                    height="30"
                                     fill="white"
                                 />
                                 <h3 className="titleFeatureBookify">Notificaciones automáticas</h3>
@@ -51,8 +52,12 @@ const Projects = () => {
                         </div>
                         <div className="buttonsProject buttonsProjectBookify">
                             <Button styleButton="primary" color="white" onClick={() => console.log("ver detalles")}>Ver detalles</Button>
-                            <div style={{ position: 'relative' }}>
-                                <Button styleButton="secondary" arrow color="white" onClick={() => setIsOpenSelect1(!isOpenSelect1)}>Ver código</Button>
+                            <div
+                                onMouseEnter={() => setIsOpenSelect1(true)}
+                                onMouseLeave={() => setIsOpenSelect1(false)}
+                                style={{ position: 'relative' }}
+                            >
+                                <Button styleButton="secondary" arrow color="white">Ver código</Button>
                                 <SelectRepository
                                     isOpen={isOpenSelect1}
                                     onSelectOption1={() => window.open('https://github.com/valentinoaraya/bookify-frontend', '_blank')}
@@ -62,10 +67,16 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className="box bookify-box bookify-image-box" style={{ gridArea: "box-3" }}>
-                        <img className="bookifyImage" src={panelBookify} alt="Panel Bookify" />
+                        <div className="image-container">
+                            <img className="bookifyImage" src={panelBookify} alt="Panel Bookify" />
+                            <Technologies position="end" technologies={["typescript", "react", "express", "node", "mongodb",]} borderRadius="0 0 10px 10px" />
+                        </div>
                     </div>
                     <div className="box ventatrack-box ventatrack-image-box" style={{ gridArea: "box-4" }}>
-                        <img className="imageVentaTrack" src={panelVentaTrack} alt="Panel de VentaTrack" />
+                        <div>
+                            <img className="imageVentaTrack" src={panelVentaTrack} alt="Panel de VentaTrack" />
+                            <Technologies position="end" technologies={["react", "firebase",]} borderRadius="" />
+                        </div>
                     </div>
                     <div className="box ventatrack-box data-ventatrack-box" style={{ gridArea: "box-5" }}>
                         <div className="dataVentaTrack">
@@ -87,11 +98,16 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className="box turnero-box image-turnero-box" style={{ gridArea: "box-7" }}>
-                        <img className="imageTurnero" src={panelTurnero} alt="Panel Turnero PAMI" />
+                        <div className="image-container">
+                            <img className="imageTurnero" src={panelTurnero} alt="Panel Turnero PAMI" />
+                            <Technologies position="end" technologies={["react", "express", "node", "mysql"]} borderRadius="0 0 10px 10px" />
+                        </div>
                     </div>
                     <div className="box sportymaxx-box" style={{ gridArea: "box-8" }}>
                         <div className="divImageSportyMaxx">
                             <img className="imgSportyMaxx" src={sportyMaxxPage} alt="Página principal de SportyMaxx" />
+                            <Technologies position="end" technologies={["react", "express", "node", "firebase"]} borderRadius="" />
+
                         </div>
                         <div className="divDataSportyMaxx">
                             <div className="dataSportyMaxx">
@@ -100,8 +116,12 @@ const Projects = () => {
                             </div>
                             <div className="buttonsProject buttonsSportyMaxx">
                                 <Button styleButton="primary" color="white" onClick={() => console.log("ver detalles")}>Ver detalles</Button>
-                                <div style={{ position: 'relative' }}>
-                                    <Button styleButton="secondary" arrow color="white" onClick={() => setIsOpenSelect2(!isOpenSelect2)}>Ver código</Button>
+                                <div
+                                    onMouseEnter={() => setIsOpenSelect2(true)}
+                                    onMouseLeave={() => setIsOpenSelect2(false)}
+                                    style={{ position: 'relative' }}
+                                >
+                                    <Button styleButton="secondary" arrow color="white">Ver código</Button>
                                     <SelectRepository
                                         isOpen={isOpenSelect2}
                                         onSelectOption1={() => window.open('https://github.com/valentinoaraya/SportyMaxx', '_blank')}
