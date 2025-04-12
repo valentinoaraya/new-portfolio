@@ -1,6 +1,7 @@
 .selectRepository {
     position: absolute;
     display: flex;
+    width: 100%;
     flex-direction: column;
     gap: .5rem;
     background-color: var(--blanco);
@@ -8,13 +9,16 @@
     border-radius: 8px;
     z-index: 100;
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateX(-20px);
     transition: opacity 0.3s ease, transform 0.3s ease;
+    top: -35px;
+    left: 100%;
+    margin-left: 0.5rem;
 }
 
 .selectRepository.open {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
 }
 
 .optionRepository {
