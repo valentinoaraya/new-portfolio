@@ -5,8 +5,14 @@ import panelBookify from "../../assets/images/panelBookify.png"
 import panelVentaTrack from "../../assets/images/panelImage.png"
 import panelTurnero from "../../assets/images/calendarioDoctor.webp"
 import sportyMaxxPage from "../../assets/images/sportymaxxPage.png"
+import SelectRepository from "./SelectRepository/SelectRepository";
+import { useState } from "react";
 
 const Projects = () => {
+
+    const [isOpenSelect1, setIsOpenSelect1] = useState(false)
+    const [isOpenSelect2, setIsOpenSelect2] = useState(false)
+
     return (
         <div className="projects">
             <div className="projectsContent">
@@ -43,9 +49,16 @@ const Projects = () => {
                                 <h3 className="titleFeatureBookify">Notificaciones automáticas</h3>
                             </div>
                         </div>
-                        <div className="buttonsProject">
+                        <div className="buttonsProject buttonsProjectBookify">
                             <Button styleButton="primary" color="white" onClick={() => console.log("ver detalles")}>Ver detalles</Button>
-                            <Button styleButton="secondary" arrow color="white" onClick={() => console.log("ver código")}>Ver código</Button>
+                            <div style={{ position: 'relative' }}>
+                                <Button styleButton="secondary" arrow color="white" onClick={() => setIsOpenSelect1(!isOpenSelect1)}>Ver código</Button>
+                                <SelectRepository
+                                    isOpen={isOpenSelect1}
+                                    onSelectOption1={() => window.open('https://github.com/valentinoaraya/bookify-frontend', '_blank')}
+                                    onSelectOption2={() => window.open('https://github.com/valentinoaraya/bookify-backend', '_blank')}
+                                />
+                            </div>
                         </div>
                     </div>
                     <div className="box bookify-box bookify-image-box" style={{ gridArea: "box-3" }}>
@@ -61,7 +74,7 @@ const Projects = () => {
                         </div>
                         <div className="buttonsProject">
                             <Button styleButton="primary" color="white" onClick={() => console.log("ver detalles")}>Ver detalles</Button>
-                            <Button styleButton="secondary" arrow color="white" onClick={() => console.log("ver código")}>Ver código</Button>
+                            <Button styleButton="secondary" arrow color="white" onClick={() => window.open('https://github.com/valentinoaraya/ventatrack', '_blank')}>Ver código</Button>
                         </div>
                     </div>
                     <div className="box turnero-box data-turnero-box" style={{ gridArea: "box-6" }}>
@@ -71,7 +84,6 @@ const Projects = () => {
                         </div>
                         <div className="buttonsProject">
                             <Button styleButton="primary" color="white" onClick={() => console.log("ver detalles")}>Ver detalles</Button>
-                            <Button styleButton="secondary" arrow color="white" onClick={() => console.log("ver código")}>Ver código</Button>
                         </div>
                     </div>
                     <div className="box turnero-box image-turnero-box" style={{ gridArea: "box-7" }}>
@@ -88,7 +100,14 @@ const Projects = () => {
                             </div>
                             <div className="buttonsProject buttonsSportyMaxx">
                                 <Button styleButton="primary" color="white" onClick={() => console.log("ver detalles")}>Ver detalles</Button>
-                                <Button styleButton="secondary" arrow color="white" onClick={() => console.log("ver código")}>Ver código</Button>
+                                <div style={{ position: 'relative' }}>
+                                    <Button styleButton="secondary" arrow color="white" onClick={() => setIsOpenSelect2(!isOpenSelect2)}>Ver código</Button>
+                                    <SelectRepository
+                                        isOpen={isOpenSelect2}
+                                        onSelectOption1={() => window.open('https://github.com/valentinoaraya/SportyMaxx', '_blank')}
+                                        onSelectOption2={() => window.open('https://github.com/valentinoaraya/sporty-maxx-backend', '_blank')}
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>

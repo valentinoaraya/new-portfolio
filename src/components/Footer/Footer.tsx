@@ -11,22 +11,25 @@ const Footer = () => {
             <div className="networksCopyright">
                 <div className="networks">
                     <GitHubIcon
-                        width="30"
-                        height="30"
-                        fill="#ffff"
                         cursorPointer
+                        onClick={() => window.open('https://github.com/valentinoaraya', '_blank')}
+                        width="25"
+                        height="25"
+                        fill="#ffff"
                     />
                     <LinkedInIcon
-                        width="30"
-                        height="30"
-                        fill="#ffff"
                         cursorPointer
+                        onClick={() => window.open('https://www.linkedin.com/in/valentino-araya-18915825b', '_blank')}
+                        width="25"
+                        height="25"
+                        fill="#ffff"
                     />
                     <InstagramIcon
-                        width="30"
-                        height="30"
-                        fill="#ffff"
                         cursorPointer
+                        onClick={() => window.open('https://www.instagram.com/tinoaraya', '_blank')}
+                        width="25"
+                        height="25"
+                        fill="#ffff"
                     />
                 </div>
                 <p className="copyright">© 2025 Valentino Araya. Todos los derechos reservados.</p>

@@ -13,14 +13,14 @@ const Hero = () => {
                 </div>
                 <div className="heroButtons">
                     <Button
-                        onClick={() => console.log("Acción de botón")}
+                        onClick={() => window.open("https://drive.google.com/file/d/16zTUe579L3cNeXvUdB0xngfRQ9qGgcY6/view?usp=sharing", '_blank')}
                         styleButton="primary"
                         arrow
                     >
                         Ver currículum
                     </Button>
                     <Button
-                        onClick={() => console.log("Acción de botón")}
+                        onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
                         styleButton="secondary"
                     >
                         Contáctame
@@ -29,21 +29,21 @@ const Hero = () => {
                 <div className="heroNetworks">
                     <GitHubIcon
                         cursorPointer
-                        onClick={() => console.log("Llevar a red social")}
+                        onClick={() => window.open('https://github.com/valentinoaraya', '_blank')}
                         width="25"
                         height="25"
                         fill="#ffff"
                     />
                     <LinkedInIcon
                         cursorPointer
-                        onClick={() => console.log("Llevar a red social")}
+                        onClick={() => window.open('https://www.linkedin.com/in/valentino-araya-18915825b', '_blank')}
                         width="25"
                         height="25"
                         fill="#ffff"
                     />
                     <InstagramIcon
                         cursorPointer
-                        onClick={() => console.log("Llevar a red social")}
+                        onClick={() => window.open('https://www.instagram.com/tinoaraya', '_blank')}
                         width="25"
                         height="25"
                         fill="#ffff"
