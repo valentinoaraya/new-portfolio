@@ -28,3 +28,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+#projects {
+  scroll-margin-top: 120px;
+}

@@ -28,6 +28,7 @@
     border: 1px solid var(--rosa);
     gap: 1.5rem;
     border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(202, 134, 202, 0.75);
 }
 
 .titleCard {
@@ -37,4 +38,14 @@
 
 .subtitleCard {
     color: var(--rosa);
+}
+
+.iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: var(--rosa);
+
 }

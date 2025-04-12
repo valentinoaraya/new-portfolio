@@ -29,7 +29,7 @@ const Footer = () => {
                         cursorPointer
                     />
                 </div>
-                <p className="copyright">© 2025 Your Name. All rights reserved.</p>
+                <p className="copyright">© 2025 Valentino Araya. Todos los derechos reservados.</p>
             </div>
         </div>
     );

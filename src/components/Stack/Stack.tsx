@@ -1,5 +1,5 @@
 import "./Stack.css"
-import { ReactIcon, NodeIcon, TypeScriptIcon, MongoDBIcon, FirebaseIcon, GitIcon } from "../../common/Icons/Icons";
+import { ReactIcon, NodeIcon, TypeScriptIcon, MongoDBIcon, FirebaseIcon, GitIcon, ExpressIcon } from "../../common/Icons/Icons";
 
 const Stack = () => {
     return (
@@ -11,6 +11,10 @@ const Stack = () => {
                     height="100"
                 />
                 <NodeIcon
+                    width="100"
+                    height="100"
+                />
+                <ExpressIcon
                     width="100"
                     height="100"
                 />

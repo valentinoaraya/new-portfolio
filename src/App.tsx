@@ -15,12 +15,19 @@ function App() {
       <NavBar />
       <main>
         <Hero />
-        <Projects />
-        <Stack />
-        <Formation />
-        <AboutMe />
-        <Contact />
-        <Footer />
+        <section id='projects'>
+          <Projects />
+
+        </section>
+        <section id='aboutme'>
+          <Stack />
+          <Formation />
+          <AboutMe />
+        </section>
+        <section id='contact'>
+          <Contact />
+          <Footer />
+        </section>
       </main>
     </>
   )

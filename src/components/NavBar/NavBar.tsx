@@ -16,6 +16,13 @@ const NavBar = () => {
         return () => window.removeEventListener("scroll", handleScroll)
     }, [])
 
+    const handleScrollToSection = (id: string) => {
+        const section = document.getElementById(id)
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" })
+        }
+    }
+
     return (
         <nav className={`navBar ${scrolled ? "scrolled" : ""}`}>
             <div className="navBarContent">
@@ -26,9 +33,9 @@ const NavBar = () => {
                     VALENTINO ARAYA
                 </h1>
                 <div className="sections">
-                    <p className="section">PROYECTOS</p>
-                    <p className="section">SOBRE MÍ</p>
-                    <p className="section">CONTACTO</p>
+                    <p className="section" onClick={() => handleScrollToSection("projects")}>PROYECTOS</p>
+                    <p className="section" onClick={() => handleScrollToSection("aboutme")}>SOBRE MÍ</p>
+                    <p className="section" onClick={() => handleScrollToSection("contact")}>CONTACTO</p>
                 </div>
             </div>
         </nav>
