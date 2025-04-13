@@ -52,7 +52,7 @@
 }
 
 .titleProject {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
 }
 
@@ -64,7 +64,7 @@
 }
 
 .description {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 300;
 }
 
@@ -206,6 +206,10 @@
     z-index: 0;
 }
 
+.image-turnero-box {
+    padding: 1rem;
+}
+
 .dataTurnero {
     z-index: 1;
 }
@@ -263,6 +267,7 @@
 
 .imgSportyMaxx {
     width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -277,4 +282,130 @@
 
 .buttonsSportyMaxx {
     margin-bottom: 2rem;
+}
+
+.sportymaxx-image {
+    display: none;
+}
+
+@media (max-width: 1350px) {
+    .titleFeatureBookify {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1250px) {
+
+    .descriptionTurnero {
+        margin-top: 1rem;
+    }
+
+    .bentoProjects {
+        grid-template-areas:
+            "box-1 box-1 box-3 box-3 box-3 box-3"
+            "box-2 box-2 box-3 box-3 box-3 box-3"
+            "box-2 box-2 box-3 box-3 box-3 box-3"
+            "box-4 box-4 box-4 box-5 box-5 box-5"
+            "box-4 box-4 box-4 box-5 box-5 box-5"
+            "box-6 box-6 box-7 box-7 box-7 box-7"
+            "box-6 box-6 box-7 box-7 box-7 box-7"
+            "box-6 box-6 box-7 box-7 box-7 box-7"
+            "box-8 box-8 box-8 box-8 box-8 box-8"
+            "box-8 box-8 box-8 box-8 box-8 box-8"
+        ;
+    }
+
+    .ventatrack-image-box {
+        padding: 1rem 1rem 0 1rem;
+    }
+}
+
+@media (max-width: 1050px) {
+
+    .bentoProjects {
+        grid-template-areas:
+            "box-1 box-1"
+            "box-2 box-3"
+            "box-5 box-5"
+            "box-4 box-4"
+            "box-6 box-7"
+            "box-8 box-8"
+        ;
+    }
+
+    .data-ventatrack-box::before {
+        background-position: right;
+    }
+
+    .buttonsProject {
+        margin: 2rem 0 0 0;
+    }
+
+    .buttonsSportyMaxx {
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .bentoProjects {
+        grid-template-areas:
+            "box-1"
+            "box-2"
+            "box-3"
+            "box-5"
+            "box-4"
+            "box-6"
+            "box-7"
+            "box-8"
+            "box-9"
+        ;
+    }
+
+    .featureBookify {
+        gap: .5rem;
+        margin: .5rem;
+    }
+
+    .buttonsProjectBookify {
+        margin-top: 1rem;
+    }
+
+    .ventatrack-image-box {
+        padding: 1rem;
+    }
+
+    .divImageSportyMaxx {
+        display: none;
+    }
+
+    .divDataSportyMaxx {
+        width: 100%;
+    }
+
+    .sportymaxx-box {
+        padding: 1rem;
+        height: auto;
+    }
+
+    .buttonsSportyMaxx {
+        margin: 1rem 0 0 0;
+    }
+
+    .sportymaxx-image {
+        display: block;
+        background: linear-gradient(to right, #CED4DA, #6C757D);
+        position: relative;
+        overflow: hidden;
+        height: 300px;
+        padding: 1rem;
+    }
+
+    .descriptionSportyMaxx {
+        margin: 0;
+    }
+
+    .imageVentaTrack {
+        border-radius: 10px;
+    }
 }

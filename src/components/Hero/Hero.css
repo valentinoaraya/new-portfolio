@@ -5,7 +5,7 @@
 .heroContent {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    max-width: 500px;
 }
 
 .titleHero {
@@ -39,4 +39,19 @@
     margin: 1rem 0;
     display: flex;
     gap: 1rem;
+}
+
+@media (max-width: 850px) {
+    .hero {
+        display: flex;
+        justify-content: center;
+    }
+
+    .heroContent {
+        align-items: center;
+    }
+
+    .heroTitles {
+        text-align: center;
+    }
 }

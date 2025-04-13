@@ -65,10 +65,29 @@
     border-left: 2px solid var(--violet);
 }
 
+@media screen and (max-width: 1350px) {
+    .timeLine {
+        margin-top: 2rem;
+        width: 70%;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .timeLineItem {
         p {
             font-size: 1rem;
         }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .timeLine {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .timeLine {
+        width: 100%;
     }
 }

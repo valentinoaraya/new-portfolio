@@ -27,7 +27,7 @@ const Projects = () => {
                         <div className="featuresBookify">
                             <div className="featureBookify">
                                 <DollarIcon
-                                    width="30"
+                                    width={window.innerWidth < 1350 ? "20" : "30"}
                                     height="30"
                                     fill="white"
                                 />
@@ -35,7 +35,7 @@ const Projects = () => {
                             </div>
                             <div className="featureBookify">
                                 <CashStackIcon
-                                    width="30"
+                                    width={window.innerWidth < 1350 ? "20" : "30"}
                                     height="30"
                                     fill="white"
                                 />
@@ -43,7 +43,7 @@ const Projects = () => {
                             </div>
                             <div className="featureBookify">
                                 <BellIcon
-                                    width="30"
+                                    width={window.innerWidth < 1350 ? "20" : "30"}
                                     height="30"
                                     fill="white"
                                 />
@@ -57,7 +57,7 @@ const Projects = () => {
                                 onMouseLeave={() => setIsOpenSelect1(false)}
                                 style={{ position: 'relative' }}
                             >
-                                <Button styleButton="secondary" arrow color="white">Ver código</Button>
+                                <Button styleButton="secondary" arrow color="white" onClick={() => setIsOpenSelect1(!isOpenSelect1)}>Ver código</Button>
                                 <SelectRepository
                                     isOpen={isOpenSelect1}
                                     onSelectOption1={() => window.open('https://github.com/valentinoaraya/bookify-frontend', '_blank')}
@@ -75,9 +75,8 @@ const Projects = () => {
                     <div className="box ventatrack-box ventatrack-image-box" style={{ gridArea: "box-4" }}>
                         <div className="image-container">
                             <img className="imageVentaTrack" src={panelVentaTrack} alt="Panel de VentaTrack" />
-                            <Technologies position="end" technologies={["react", "firebase",]} borderRadius="" />
+                            <Technologies position="end" technologies={["react", "firebase",]} borderRadius={window.innerWidth <= 850 ? "10px" : ""} />
                         </div>
-
                     </div>
                     <div className="box ventatrack-box data-ventatrack-box" style={{ gridArea: "box-5" }}>
                         <div className="dataVentaTrack">
@@ -122,7 +121,7 @@ const Projects = () => {
                                     onMouseLeave={() => setIsOpenSelect2(false)}
                                     style={{ position: 'relative' }}
                                 >
-                                    <Button styleButton="secondary" arrow color="white">Ver código</Button>
+                                    <Button styleButton="secondary" arrow color="white" onClick={() => setIsOpenSelect2(!isOpenSelect2)}>Ver código</Button>
                                     <SelectRepository
                                         isOpen={isOpenSelect2}
                                         onSelectOption1={() => window.open('https://github.com/valentinoaraya/SportyMaxx', '_blank')}
@@ -130,6 +129,12 @@ const Projects = () => {
                                     />
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div className="box sportymaxx-image" style={{ gridArea: "box-9" }}>
+                        <div className="image-container">
+                            <img className="imageVentaTrack" src={sportyMaxxPage} alt="Página de SportyMaxx" />
+                            <Technologies position="end" technologies={["react", "express", "node", "firebase"]} borderRadius="10px" />
                         </div>
                     </div>
                 </div>

@@ -1,13 +1,13 @@
 .footer {
     padding: 2rem 0;
-    border-top: 1px solid var(--rosa);
+    border-top: 1px solid grey;
     display: flex;
     justify-content: space-between;
     gap: 2rem;
 }
 
 .nameFooter {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
@@ -30,5 +30,20 @@
 }
 
 .copyright {
+    text-align: end;
     color: var(--rosa);
+}
+
+@media screen and (max-width: 710px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .networksCopyright {
+        align-items: start;
+    }
+
+    .copyright {
+        text-align: start;
+    }
 }

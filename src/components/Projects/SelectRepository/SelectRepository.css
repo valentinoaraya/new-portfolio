@@ -32,3 +32,14 @@
 .optionRepository:hover {
     background-color: var(--rosa);
 }
+
+@media (max-width: 1110px) {
+    .selectRepository {
+        top: unset;
+        bottom: 100%;
+        left: 0;
+        transform: translateY(-20px);
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+}

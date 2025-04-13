@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import "./NavBar.css"
+import { HamburgerIcon } from "../../common/Icons/Icons";
 
 const NavBar = () => {
-
     const [scrolled, setScrolled] = useState(false)
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     useEffect(() => {
         const handleScroll = () => {
@@ -20,6 +21,7 @@ const NavBar = () => {
         const section = document.getElementById(id)
         if (section) {
             section.scrollIntoView({ behavior: "smooth" })
+            setIsMenuOpen(false)
         }
     }
 
@@ -32,7 +34,16 @@ const NavBar = () => {
                 >
                     VALENTINO ARAYA
                 </h1>
-                <div className="sections">
+                <button
+                    className={`hamburger ${isMenuOpen ? "open" : ""}`}
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}
+                >
+                    <HamburgerIcon
+                        width="30"
+                        height="30"
+                    />
+                </button>
+                <div className={`sections ${isMenuOpen ? "open" : ""}`}>
                     <p className="section" onClick={() => handleScrollToSection("projects")}>PROYECTOS</p>
                     <p className="section" onClick={() => handleScrollToSection("aboutme")}>SOBRE MÍ</p>
                     <p className="section" onClick={() => handleScrollToSection("contact")}>CONTACTO</p>
