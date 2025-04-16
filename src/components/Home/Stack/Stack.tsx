@@ -1,5 +1,5 @@
 import "./Stack.css"
-import { ReactIcon, NodeIcon, TypeScriptIcon, MongoDBIcon, FirebaseIcon, GitIcon, ExpressIcon } from "../../common/Icons/Icons";
+import { ReactIcon, NodeIcon, TypeScriptIcon, MongoDBIcon, FirebaseIcon, GitIcon, ExpressIcon } from "../../../common/Icons/Icons";
 
 const Stack = () => {
     return (

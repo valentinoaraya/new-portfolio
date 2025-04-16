@@ -1,5 +1,5 @@
 import "./Contact.css"
-import { MailIcon, PhoneIcon, PinIcon } from "../../common/Icons/Icons";
+import { MailIcon, PhoneIcon, PinIcon } from "../../../common/Icons/Icons";
 
 const Contact = () => {
     return (

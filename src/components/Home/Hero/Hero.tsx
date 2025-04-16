@@ -1,6 +1,6 @@
 import "./Hero.css"
-import Button from "../../common/Button/Button";
-import { GitHubIcon, InstagramIcon, LinkedInIcon } from "../../common/Icons/Icons";
+import Button from "../../../common/Button/Button";
+import { GitHubIcon, InstagramIcon, LinkedInIcon } from "../../../common/Icons/Icons";
 
 const Hero = () => {
     return (

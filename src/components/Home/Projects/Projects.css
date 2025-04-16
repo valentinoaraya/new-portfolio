@@ -83,7 +83,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../../assets/images/calendarimg.png');
+    background-image: url('../../../assets/images/calendarimg.png');
     background-size: contain;
     opacity: 0.5;
     background-position-x: 50px;
@@ -164,7 +164,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../../assets/images/calendar_1_-removebg-preview.png');
+    background-image: url('../../../assets/images/calendar_1_-removebg-preview.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: 250px;
@@ -196,7 +196,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../../assets/images/calendar_2_-removebg-preview.png');
+    background-image: url('../../../assets/images/calendar_2_-removebg-preview.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -255,7 +255,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../../assets/images/calendar_4_-removebg-preview.png');
+    background-image: url('../../../assets/images/calendar_4_-removebg-preview.png');
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.5;

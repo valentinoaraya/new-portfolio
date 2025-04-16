@@ -1,34 +1,28 @@
 import './App.css'
 import NavBar from './components/NavBar/NavBar'
-import Hero from './components/Hero/Hero'
-import Projects from './components/Projects/Projects'
-import Formation from './components/Formation/Formation'
-import Stack from './components/Stack/Stack'
-import AboutMe from './components/AboutMe/AboutMe'
-import Contact from './components/Contact/Contact'
+import Home from './components/Home/Home'
 import Footer from './components/Footer/Footer'
+import { Routes, Route, BrowserRouter } from 'react-router-dom'
+import BookifyDetail from './components/ProjectDetails/BookifyDetail/BookifyDetail'
 
 function App() {
 
   return (
     <>
-      <NavBar />
-      <main>
-        <Hero />
-        <section id='projects'>
-          <Projects />
-
-        </section>
-        <section id='aboutme'>
-          <Stack />
-          <Formation />
-          <AboutMe />
-        </section>
-        <section id='contact'>
-          <Contact />
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path='/' element={
+            <div className='divWithMaxWidth'>
+              <Home />
+            </div>
+          } />
+          <Route path='/bookify-detail' element={<BookifyDetail />} />
+        </Routes>
+        <div className='divWithMaxWidth'>
           <Footer />
-        </section>
-      </main>
+        </div>
+      </BrowserRouter>
     </>
   )
 }

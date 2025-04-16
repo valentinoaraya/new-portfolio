@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import "./NavBar.css"
 import { HamburgerIcon } from "../../common/Icons/Icons";
+import { useNavigate } from "react-router-dom";
 
 const NavBar = () => {
     const [scrolled, setScrolled] = useState(false)
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const navigate = useNavigate()
 
     useEffect(() => {
         const handleScroll = () => {
@@ -30,7 +32,7 @@ const NavBar = () => {
             <div className="navBarContent">
                 <h1
                     className="titleNavBar"
-                    onClick={() => window.scrollTo(0, 0)}
+                    onClick={() => navigate("/")}
                 >
                     VALENTINO ARAYA
                 </h1>

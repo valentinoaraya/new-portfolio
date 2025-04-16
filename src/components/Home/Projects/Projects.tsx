@@ -1,18 +1,20 @@
 import "./Projects.css"
-import { DollarIcon, CashStackIcon, BellIcon } from "../../common/Icons/Icons";
-import Button from "../../common/Button/Button";
-import panelBookify from "../../assets/images/panelBookify.png"
-import panelVentaTrack from "../../assets/images/panelImage.png"
-import panelTurnero from "../../assets/images/calendarioDoctor.webp"
-import sportyMaxxPage from "../../assets/images/sportymaxxPage.png"
+import { DollarIcon, CashStackIcon, BellIcon } from "../../../common/Icons/Icons";
+import Button from "../../../common/Button/Button";
+import panelBookify from "../../../assets/images/panelBookify.png"
+import panelVentaTrack from "../../../assets/images/panelImage.png"
+import panelTurnero from "../../../assets/images/calendarioDoctor.webp"
+import sportyMaxxPage from "../../../assets/images/sportymaxxPage.png"
 import SelectRepository from "./SelectRepository/SelectRepository";
 import Technologies from "./Technologies/Technologies";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Projects = () => {
 
     const [isOpenSelect1, setIsOpenSelect1] = useState(false)
     const [isOpenSelect2, setIsOpenSelect2] = useState(false)
+    const navigate = useNavigate()
 
     return (
         <div className="projects">
@@ -51,7 +53,7 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className="buttonsProject buttonsProjectBookify">
-                            <Button styleButton="primary" color="white" onClick={() => console.log("ver detalles")}>Ver detalles</Button>
+                            <Button styleButton="primary" color="white" onClick={() => navigate("/bookify-detail")}>Ver detalles</Button>
                             <div
                                 onMouseEnter={() => setIsOpenSelect1(true)}
                                 onMouseLeave={() => setIsOpenSelect1(false)}
@@ -69,7 +71,7 @@ const Projects = () => {
                     <div className="box bookify-box bookify-image-box" style={{ gridArea: "box-3" }}>
                         <div className="image-container">
                             <img className="bookifyImage" src={panelBookify} alt="Panel Bookify" />
-                            <Technologies position="end" technologies={["typescript", "react", "express", "node", "mongodb",]} borderRadius="0 0 10px 10px" />
+                            <Technologies position="end" technologies={["typescript", "react", "express", "node", "mongodb"]} borderRadius="0 0 10px 10px" />
                         </div>
                     </div>
                     <div className="box ventatrack-box ventatrack-image-box" style={{ gridArea: "box-4" }}>
