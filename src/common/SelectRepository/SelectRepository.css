@@ -21,6 +21,29 @@
     transform: translateX(0);
 }
 
+.selectRepositoryRight {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: .5rem;
+    background-color: var(--blanco);
+    padding: .5rem;
+    border-radius: 8px;
+    z-index: 100;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    top: -35px;
+    right: 100%;
+    margin-right: 0.5rem;
+}
+
+.selectRepositoryRight.open {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 .optionRepository {
     color: var(--negro);
     cursor: pointer;

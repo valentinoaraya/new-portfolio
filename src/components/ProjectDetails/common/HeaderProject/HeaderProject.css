@@ -1,6 +1,6 @@
 .imageProjectDetailContainer {
     margin-bottom: 2rem;
-    height: 70vh;
+    height: 60vh;
     width: 100%;
 }
 
@@ -40,4 +40,13 @@
 
 .technologiesContainer {
     position: relative;
+    text-align: end;
+}
+
+.divSubtitleDataProject {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    justify-content: end;
+    cursor: pointer;
 }

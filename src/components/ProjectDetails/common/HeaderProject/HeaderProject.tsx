@@ -1,5 +1,8 @@
 import "./HeaderProject.css"
-import Technologies from "../../../Home/Projects/Technologies/Technologies"
+import Technologies from "../../../../common/Technologies/Technologies"
+import { ArrowUpIcon } from "../../../../common/Icons/Icons"
+import SelectRepository from "../../../../common/SelectRepository/SelectRepository"
+import { useState } from "react"
 
 interface Props {
     title: string
@@ -7,11 +10,14 @@ interface Props {
     description: string
     technologies: string[]
     linkWeb?: string
-    linkGitHub?: string
+    linkGitHub?: string[]
     color: string
 }
 
 const HeaderProject: React.FC<Props> = ({ title, imageProject, description, technologies, color, linkWeb, linkGitHub }) => {
+
+    const [isOpenSelect, setIsOpenSelect] = useState(false)
+
     return (
         <>
             <div className="imageProjectDetailContainer"
@@ -40,8 +46,60 @@ const HeaderProject: React.FC<Props> = ({ title, imageProject, description, tech
                                 borderRadius=""
                             />
                         </div>
-                        {linkWeb && <p className="subtitleDataProject">Visitá la web</p>}
-                        {linkGitHub && <p className="subtitleDataProject">Mirá el código</p>}
+                        {
+                            linkWeb &&
+                            <div
+                                className="divSubtitleDataProject"
+                                onClick={() => window.open(linkWeb, "_blank")}
+                            >
+                                <p className="subtitleDataProject">Visitá la web</p>
+                                <ArrowUpIcon
+                                    width="16"
+                                    height="16"
+                                    fill="#E2CFEA"
+                                />
+                            </div>
+                        }
+                        {
+                            linkGitHub &&
+                            <>
+                                {
+                                    linkGitHub.length === 1 ?
+                                        <div
+                                            className="divSubtitleDataProject"
+                                            onClick={() => window.open(linkGitHub[0], "_blank")}
+                                        >
+                                            <p className="subtitleDataProject">Mirá el código</p>
+                                            <ArrowUpIcon
+                                                width="16"
+                                                height="16"
+                                                fill="#E2CFEA"
+                                            />
+                                        </div>
+                                        :
+                                        <div
+                                            className="divSubtitleDataProject"
+                                            onMouseEnter={() => setIsOpenSelect(true)}
+                                            onMouseLeave={() => setIsOpenSelect(false)}
+                                            onClick={() => setIsOpenSelect(!isOpenSelect)}
+                                            style={{ position: 'relative' }}
+                                        >
+                                            <SelectRepository
+                                                selectRepositoryRight
+                                                isOpen={isOpenSelect}
+                                                onSelectOption1={() => window.open(linkGitHub[0], '_blank')}
+                                                onSelectOption2={() => window.open(linkGitHub[1], '_blank')}
+                                            />
+                                            <p className="subtitleDataProject">Mirá el código</p>
+                                            <ArrowUpIcon
+                                                width="16"
+                                                height="16"
+                                                fill="#E2CFEA"
+                                            />
+                                        </div>
+                                }
+                            </>
+                        }
                     </div>
                 </div>
             </div>

@@ -4,12 +4,13 @@ import Home from './components/Home/Home'
 import Footer from './components/Footer/Footer'
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import BookifyDetail from './components/ProjectDetails/BookifyDetail/BookifyDetail'
+import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 
 function App() {
-
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <NavBar />
         <Routes>
           <Route path='/' element={

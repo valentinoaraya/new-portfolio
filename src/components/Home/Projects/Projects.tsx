@@ -5,8 +5,8 @@ import panelBookify from "../../../assets/images/panelBookify.png"
 import panelVentaTrack from "../../../assets/images/panelImage.png"
 import panelTurnero from "../../../assets/images/calendarioDoctor.webp"
 import sportyMaxxPage from "../../../assets/images/sportymaxxPage.png"
-import SelectRepository from "./SelectRepository/SelectRepository";
-import Technologies from "./Technologies/Technologies";
+import SelectRepository from "../../../common/SelectRepository/SelectRepository";
+import Technologies from "../../../common/Technologies/Technologies";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 

@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import "./NavBar.css"
 import { HamburgerIcon } from "../../common/Icons/Icons";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const NavBar = () => {
     const [scrolled, setScrolled] = useState(false)
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const navigate = useNavigate()
+    const { pathname } = useLocation()
 
     useEffect(() => {
         const handleScroll = () => {
@@ -32,7 +33,15 @@ const NavBar = () => {
             <div className="navBarContent">
                 <h1
                     className="titleNavBar"
-                    onClick={() => navigate("/")}
+                    onClick={pathname === "/" ?
+                        () => {
+                            handleScrollToSection("hero")
+                        }
+                        :
+                        () => {
+                            navigate("/")
+                        }
+                    }
                 >
                     VALENTINO ARAYA
                 </h1>
@@ -46,12 +55,36 @@ const NavBar = () => {
                     />
                 </button>
                 <div className={`sections ${isMenuOpen ? "open" : ""}`}>
-                    <p className="section" onClick={() => handleScrollToSection("projects")}>PROYECTOS</p>
-                    <p className="section" onClick={() => handleScrollToSection("aboutme")}>SOBRE MÍ</p>
-                    <p className="section" onClick={() => handleScrollToSection("contact")}>CONTACTO</p>
+                    <p className="section" onClick={
+                        pathname === "/" ?
+                            () => handleScrollToSection("projects")
+                            :
+                            () => {
+                                navigate("/")
+                                handleScrollToSection("projects")
+                            }
+                    }>PROYECTOS</p>
+                    <p className="section" onClick={
+                        pathname === "/" ?
+                            () => handleScrollToSection("aboutme")
+                            :
+                            () => {
+                                navigate("/")
+                                handleScrollToSection("aboutme")
+                            }
+                    }>SOBRE MÍ</p>
+                    <p className="section" onClick={
+                        pathname === "/" ?
+                            () => handleScrollToSection("contact")
+                            :
+                            () => {
+                                navigate("/")
+                                handleScrollToSection("contact")
+                            }
+                    }>CONTACTO</p>
                 </div>
             </div>
-        </nav>
+        </nav >
     );
 }
 

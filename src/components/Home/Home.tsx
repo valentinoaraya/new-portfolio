@@ -8,7 +8,9 @@ import Contact from "./Contact/Contact";
 const Home = () => {
     return (
         <>
-            <Hero />
+            <section id="hero">
+                <Hero />
+            </section>
             <section id='projects'>
                 <Projects />
             </section>

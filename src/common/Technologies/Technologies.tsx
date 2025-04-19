@@ -1,5 +1,5 @@
 import "./Technologies.css"
-import { ReactIcon, NodeIcon, TypeScriptIcon, MongoDBIcon, ExpressIcon, FirebaseIcon, SQLIcon } from "../../../../common/Icons/Icons";
+import { ReactIcon, NodeIcon, TypeScriptIcon, MongoDBIcon, ExpressIcon, FirebaseIcon, SQLIcon } from "../Icons/Icons";
 
 interface Props {
     technologies: string[];

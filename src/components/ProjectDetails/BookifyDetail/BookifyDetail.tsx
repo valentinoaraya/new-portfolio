@@ -12,8 +12,9 @@ const BookifyDetail = () => {
                 technologies={["typescript", "react", "express", "node", "mongodb"]}
                 color="#457B9D"
                 linkWeb="https://landing-bookify.vercel.app/"
-                linkGitHub="https://github.com/valentinoaraya/bookify-frontend"
+                linkGitHub={["https://github.com/valentinoaraya/bookify-frontend", "https://github.com/valentinoaraya/bookify-backend"]}
             />
+
         </div>
     );
 }
