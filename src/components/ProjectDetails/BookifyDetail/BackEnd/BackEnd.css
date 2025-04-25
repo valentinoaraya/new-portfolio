@@ -1,0 +1,115 @@
+.imageContainer {
+    padding: .2rem;
+    background-color: #457B9D;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.structureFolders {
+    margin: 3rem 0;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.structureFoldersDescription {
+
+    ul {
+        margin: 2rem 1rem;
+    }
+
+    li {
+        margin: 1rem 0;
+    }
+}
+
+.spanUL {
+    color: var(--rosa);
+    font-weight: 600;
+}
+
+.imagesContainer {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.descriptionSecurity {
+    margin: 1rem 0;
+}
+
+.subtitleSection {
+    margin: 2rem 0 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--rosa);
+}
+
+.imageAndSteps {
+    display: flex;
+    gap: 2rem;
+}
+
+.step {
+    margin-bottom: 2rem;
+}
+
+.titleIconStep {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: .5rem;
+}
+
+.stepTitle {
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--rosa);
+}
+
+.imageTokenContainer {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.imageToEnter {
+    display: none;
+}
+
+.imageAndDescription {
+    display: flex;
+    gap: 2rem;
+}
+
+@media (max-width: 1200px) {
+
+    .imageToDelete {
+        display: none;
+    }
+
+    .imageToEnter {
+        display: block;
+    }
+
+    .imagesContainer {
+        justify-content: center;
+    }
+
+    .imageAndDescription {
+        flex-direction: column;
+    }
+
+    .imageNotification {
+        display: flex;
+        justify-content: center;
+    }
+}

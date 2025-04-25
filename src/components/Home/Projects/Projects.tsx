@@ -1,10 +1,10 @@
 import "./Projects.css"
 import { DollarIcon, CashStackIcon, BellIcon } from "../../../common/Icons/Icons";
 import Button from "../../../common/Button/Button";
-import panelBookify from "../../../assets/images/panelBookify.png"
-import panelVentaTrack from "../../../assets/images/panelImage.png"
-import panelTurnero from "../../../assets/images/calendarioDoctor.webp"
-import sportyMaxxPage from "../../../assets/images/sportymaxxPage.png"
+import panelBookify from "../../../assets/images/bookify/panelBookify.png"
+import panelVentaTrack from "../../../assets/images/ventatrack/panelImage.png"
+import panelTurnero from "../../../assets/images/turnero/calendarioDoctor.webp"
+import sportyMaxxPage from "../../../assets/images/sportymaxx/sportymaxxPage.png"
 import SelectRepository from "../../../common/SelectRepository/SelectRepository";
 import Technologies from "../../../common/Technologies/Technologies";
 import { useState } from "react";

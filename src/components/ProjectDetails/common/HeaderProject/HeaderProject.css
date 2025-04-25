@@ -29,6 +29,10 @@
     gap: 1rem;
 }
 
+.dataProject {
+    margin-bottom: 2rem;
+}
+
 .subtitleDataProject {
     font-style: italic;
     color: var(--rosa);
