@@ -17,10 +17,11 @@
 .desciptionAndTechnologies {
     display: flex;
     justify-content: space-between;
+    gap: 2rem;
 }
 
 .divDescriptionProject {
-    max-width: 900px;
+    width: 55%;
 }
 
 .divTechnologiesAndLinks {
@@ -53,4 +54,22 @@
     gap: .5rem;
     justify-content: end;
     cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .desciptionAndTechnologies {
+        flex-direction: column;
+    }
+
+    .divDescriptionProject {
+        width: 100%;
+    }
+
+    .technologiesContainer {
+        text-align: start;
+    }
+
+    .divSubtitleDataProject {
+        justify-content: start;
+    }
 }

@@ -61,7 +61,7 @@
         top: unset;
         bottom: 100%;
         left: 0;
-        transform: translateY(-20px);
+        transform: translateY(90px);
         margin-left: 0;
         margin-bottom: 0.5rem;
     }

@@ -9,12 +9,13 @@ interface Props {
     imageProject: string
     description: string
     technologies: string[]
+    mobileImageProject: string;
     linkWeb?: string
     linkGitHub?: string[]
     color: string
 }
 
-const HeaderProject: React.FC<Props> = ({ title, imageProject, description, technologies, color, linkWeb, linkGitHub }) => {
+const HeaderProject: React.FC<Props> = ({ title, imageProject, mobileImageProject, description, technologies, color, linkWeb, linkGitHub }) => {
 
     const [isOpenSelect, setIsOpenSelect] = useState(false)
 
@@ -22,7 +23,7 @@ const HeaderProject: React.FC<Props> = ({ title, imageProject, description, tech
         <>
             <div className="imageProjectDetailContainer"
                 style={{
-                    backgroundImage: `url('${imageProject}')`,
+                    backgroundImage: `url('${window.innerWidth >= 900 ? imageProject : mobileImageProject}')`,
                     backgroundSize: "cover",
                     backgroundPositionX: "center"
                 }}
@@ -42,7 +43,7 @@ const HeaderProject: React.FC<Props> = ({ title, imageProject, description, tech
                             <Technologies
                                 noPadding
                                 technologies={technologies}
-                                position="end"
+                                position={window.innerWidth >= 900 ? "end" : "start"}
                                 borderRadius=""
                             />
                         </div>
@@ -85,7 +86,7 @@ const HeaderProject: React.FC<Props> = ({ title, imageProject, description, tech
                                             style={{ position: 'relative' }}
                                         >
                                             <SelectRepository
-                                                selectRepositoryRight
+                                                selectRepositoryRight={window.innerWidth >= 900}
                                                 isOpen={isOpenSelect}
                                                 onSelectOption1={() => window.open(linkGitHub[0], '_blank')}
                                                 onSelectOption2={() => window.open(linkGitHub[1], '_blank')}

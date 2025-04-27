@@ -74,10 +74,12 @@ const BackEnd: React.FC<{ color: string }> = ({ color }) => {
                     <div className="subSectionSecurity">
                         <h3 className="subtitleSection">Autenticación de usuarios</h3>
                         <div className="imageAndSteps">
-                            <div style={{ width: "300px" }} className="imageContainer">
-                                <img className="image" src={imageAuth} alt="Flujo de autenticación" />
+                            <div className="imageSecurityContainer">
+                                <div className="imageContainer imageSecurity">
+                                    <img className="image" src={imageAuth} alt="Flujo de autenticación" />
+                                </div>
                             </div>
-                            <div style={{ width: "50%" }} className="stepsContainer">
+                            <div className="stepsContainer">
                                 <div className="step">
                                     <div className="titleIconStep">
                                         <NumberOneIcon
@@ -146,10 +148,12 @@ const BackEnd: React.FC<{ color: string }> = ({ color }) => {
                     <div className="subSectionSecurity">
                         <h3 className="subtitleSection">Pagos con Mercado Pago</h3>
                         <div className="imageAndSteps">
-                            <div className="imageContainer">
-                                <img className="image" src={imagePayment} alt="Flujo de pago" />
+                            <div className="imageSecurityContainer">
+                                <div className="imageContainer imagePayment">
+                                    <img className="image" src={imagePayment} alt="Flujo de pago" />
+                                </div>
                             </div>
-                            <div style={{ width: "80%", display: "flex", flexDirection: "column", justifyContent: "space-between" }} className="stepsContainer">
+                            <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between" }} className="stepsContainerPayments">
                                 <div className="steps">
                                     <div className="step">
                                         <div className="titleIconStep">
@@ -213,7 +217,7 @@ const BackEnd: React.FC<{ color: string }> = ({ color }) => {
                             <p className="descriptionSecurity">Utilizo algunas plantillas de emails dependiendo a quién vaya dirigido (empresa o cliente).</p>
                         </div>
                         <div className="imageNotification">
-                            <div style={{ width: "100%" }} className="imageContainer">
+                            <div className="imageContainer">
                                 <img className="image" src={imageSendEmail} alt="Función de enviar email" />
                             </div>
                         </div>
@@ -222,7 +226,7 @@ const BackEnd: React.FC<{ color: string }> = ({ color }) => {
                         <h3 className="subtitleSection">Recordatorios</h3>
                         <p className="descriptionSecurity">Le recordamos a los clientes sobre los turnos que tienen agendados cuando el turno es al día siguiente. Utilizamos node-cron para ejecutar la función de recordatorios todos los días a una hora determinada. La función obtiene todos los turnos que con la fecha de mañana y envía un recordatorio a los clientes que tienen esos turnos.</p>
                         <div style={{ display: "flex", justifyContent: "center" }}>
-                            <div style={{ width: "80%", margin: "2rem 0" }} className="imageContainer">
+                            <div style={{ margin: "2rem 0" }} className="imageContainer">
                                 <img className="image" src={imageReminders} alt="Función de enviar recordatorios" />
                             </div>
                         </div>
@@ -234,7 +238,7 @@ const BackEnd: React.FC<{ color: string }> = ({ color }) => {
                     </div>
                     <p className="descriptionSecurity">Para no sobrecargar la base de datos con datos viejos que no se utilizan, implementé una función que elimina todos los turnos agendados y habilitados para agendar anteriores al día actual. La función se ejecuta con node-cron a una cierta hora todos los días.</p>
                     <div style={{ display: "flex", justifyContent: "center" }}>
-                        <div style={{ width: "80%", margin: "2rem 0" }} className="imageContainer">
+                        <div style={{ margin: "2rem 0" }} className="imageContainer">
                             <img className="image" src={imageDatabaseClean} alt="Función de limpiar base de datos" />
                         </div>
                     </div>

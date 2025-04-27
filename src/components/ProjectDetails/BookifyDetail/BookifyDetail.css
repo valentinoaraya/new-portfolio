@@ -32,3 +32,9 @@
 .nav-button.active:hover {
     color: white;
 }
+
+@media (max-width: 900px) {
+    .navigation-menu {
+        margin-top: 4rem;
+    }
+}
