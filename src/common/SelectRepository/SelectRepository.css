@@ -1,4 +1,5 @@
 .selectRepository {
+    display: none;
     position: absolute;
     display: flex;
     width: 100%;
@@ -17,6 +18,7 @@
 }
 
 .selectRepository.open {
+    display: block;
     opacity: 1;
     transform: translateX(0);
 }
@@ -58,6 +60,7 @@
 
 @media (max-width: 1110px) {
     .selectRepository {
+        display: none;
         top: unset;
         bottom: 100%;
         left: 0;

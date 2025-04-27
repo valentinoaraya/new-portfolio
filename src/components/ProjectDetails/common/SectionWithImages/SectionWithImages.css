@@ -24,3 +24,52 @@
 .parrafDescription {
     margin-bottom: 1rem;
 }
+
+.imagesSection {
+    display: flex;
+    width: 70%;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.imageSectionContainerWithTwoImages {
+    width: 30%;
+}
+
+.imageSectionContainer {
+    width: 100%;
+    padding: .2rem;
+    background-color: var(--nav-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.imageSection {
+    border-radius: 5px;
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .imageSectionContainerWithTwoImages {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .descriptionAndImages {
+        flex-direction: column;
+    }
+
+    .descriptionSectionContainer,
+    .imagesSection {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .imagesSection {
+        gap: 1rem;
+    }
+}

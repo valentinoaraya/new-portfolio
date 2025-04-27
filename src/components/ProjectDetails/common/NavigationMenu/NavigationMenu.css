@@ -1,0 +1,36 @@
+.navigation-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 2rem;
+}
+
+.nav-button {
+    padding: 0.75rem 1.5rem;
+    background: transparent;
+    color: white;
+    border-radius: 0;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.nav-button:hover {
+    background: var(--nav-color);
+    color: white;
+}
+
+.nav-button.active {
+    border-bottom: 2px solid var(--nav-color);
+    color: var(--nav-color);
+}
+
+.nav-button.active:hover {
+    color: white;
+}
+
+@media (max-width: 900px) {
+    .navigation-menu {
+        margin-top: 4rem;
+    }
+}

@@ -1,14 +1,13 @@
-import HeaderProject from "../common/HeaderProject/HeaderProject";
 import "./BookifyDetail.css"
+import HeaderProject from "../common/HeaderProject/HeaderProject";
 import backgroundBookify from "../../../assets/images/bookify/backgroundBookify.png"
 import backgroundMobileBookify from "../../../assets/images/bookify/backgroundMobileBookify.png"
 import BackEnd from "./BackEnd/BackEnd";
 import FrontEnd from "./FrontEnd/FrontEnd";
-import { useState } from "react";
+import NavigationMenu from "../common/NavigationMenu/NavigationMenu";
 
 const BookifyDetail = () => {
     const color = "#457B9D"
-    const [activeComponent, setActiveComponent] = useState<'backend' | 'frontend'>('backend');
 
     return (
         <div className="bookifyDetail">
@@ -22,21 +21,17 @@ const BookifyDetail = () => {
                 linkWeb="https://landing-bookify.vercel.app/"
                 linkGitHub={["https://github.com/valentinoaraya/bookify-frontend", "https://github.com/valentinoaraya/bookify-backend"]}
             />
-            <div className="divWithMaxWidth navigation-menu">
-                <button
-                    className={`nav-button ${activeComponent === 'backend' ? 'active' : ''}`}
-                    onClick={() => setActiveComponent('backend')}
-                >
-                    Backend
-                </button>
-                <button
-                    className={`nav-button ${activeComponent === 'frontend' ? 'active' : ''}`}
-                    onClick={() => setActiveComponent('frontend')}
-                >
-                    Frontend
-                </button>
-            </div>
-            {activeComponent === 'backend' ? <BackEnd color={color} /> : <FrontEnd color={color} />}
+            <NavigationMenu
+                color={color}
+                menu1={{
+                    title: "Back End",
+                    element: <BackEnd color={color} />
+                }}
+                menu2={{
+                    title: "Front End",
+                    element: <FrontEnd color={color} />
+                }}
+            />
         </div>
     );
 }

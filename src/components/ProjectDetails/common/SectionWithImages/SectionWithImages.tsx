@@ -9,7 +9,10 @@ interface Props {
 
 const SectionWithImages: React.FC<Props> = ({ title, description, images, color }) => {
     return (
-        <div className="sectionWithImages divWithMaxWidth">
+        <div
+            style={{ "--nav-color": color } as React.CSSProperties}
+            className="sectionWithImages divWithMaxWidth"
+        >
             <div className="sectionContent">
                 <div style={{ borderBottom: `1px solid ${color}` }} className="titleSectionContainer">
                     <h2 className="titleSection">{title}</h2>
@@ -24,7 +27,11 @@ const SectionWithImages: React.FC<Props> = ({ title, description, images, color 
                     </div>
                     <div className="imagesSection">
                         {images.map((image, index) => {
-                            return <p key={index}>{image}</p>
+                            return <div key={index} className={images.length === 2 ? "imageSectionContainerWithTwoImages" : ""}>
+                                <div className="imageSectionContainer">
+                                    <img className="imageSection" src={image} alt={`Imagen ${index}`} />
+                                </div>
+                            </div>
                         })}
                     </div>
                 </div>
