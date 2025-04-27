@@ -32,10 +32,6 @@
     justify-content: center;
 }
 
-.imageSectionContainerWithTwoImages {
-    width: 30%;
-}
-
 .imageSectionContainer {
     width: 100%;
     padding: .2rem;
@@ -49,12 +45,6 @@
 .imageSection {
     border-radius: 5px;
     width: 100%;
-}
-
-@media (max-width: 1200px) {
-    .imageSectionContainerWithTwoImages {
-        width: 100%;
-    }
 }
 
 @media (max-width: 900px) {

@@ -1,0 +1,23 @@
+.ventatrackDetail {
+    width: 100%;
+}
+
+.imageContainerVentatrack {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .2rem;
+    background-color: #a99985;
+    border-radius: 5px;
+}
+
+.imageVentatrack {
+    border-radius: 5px;
+    width: 300px;
+}
+
+.imageCodeVentatrack {
+    border-radius: 5px;
+    width: 100%;
+}

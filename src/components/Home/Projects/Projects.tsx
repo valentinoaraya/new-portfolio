@@ -86,7 +86,7 @@ const Projects = () => {
                             <p className="description">Software para gestión de ventas, cuenta con historial y tabla de productos. Ideal para cualquier tipo de negocio.</p>
                         </div>
                         <div className="buttonsProject">
-                            <Button styleButton="primary" color="white" onClick={() => console.log("ver detalles")}>Ver detalles</Button>
+                            <Button styleButton="primary" color="white" onClick={() => navigate("/ventatrack-detail")}>Ver detalles</Button>
                             <Button styleButton="secondary" arrow color="white" onClick={() => window.open('https://github.com/valentinoaraya/ventatrack', '_blank')}>Ver código</Button>
                         </div>
                     </div>

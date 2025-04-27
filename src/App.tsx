@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer'
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import BookifyDetail from './components/ProjectDetails/BookifyDetail/BookifyDetail'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
+import VentaTrackDetail from './components/ProjectDetails/VentaTrackDetail/VentaTrackDetail'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             </div>
           } />
           <Route path='/bookify-detail' element={<BookifyDetail />} />
+          <Route path='/ventatrack-detail' element={<VentaTrackDetail />} />
         </Routes>
         <div className='divWithMaxWidth'>
           <Footer />

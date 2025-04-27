@@ -27,7 +27,7 @@ const SectionWithImages: React.FC<Props> = ({ title, description, images, color 
                     </div>
                     <div className="imagesSection">
                         {images.map((image, index) => {
-                            return <div key={index} className={images.length === 2 ? "imageSectionContainerWithTwoImages" : ""}>
+                            return <div key={index} >
                                 <div className="imageSectionContainer">
                                     <img className="imageSection" src={image} alt={`Imagen ${index}`} />
                                 </div>
