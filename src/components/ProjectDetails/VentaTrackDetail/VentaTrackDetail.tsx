@@ -5,7 +5,7 @@ import backgroundVentaTrack from "../../../assets/images/ventatrack/ventatrackBa
 import mobileBackgroundVentaTrack from "../../../assets/images/ventatrack/mobileBackgroundVentatrack.png"
 import tableProductsImage from "../../../assets/images/ventatrack/tableProducts.png"
 import panelSellImage from "../../../assets/images/ventatrack/panelVentaTrack.png"
-import formNewProduct from "../../../assets/images/ventatrack/formNewProduct2.png"
+import formNewProductImage from "../../../assets/images/ventatrack/formNewProduct2.png"
 import historyImage from "../../../assets/images/ventatrack/historial.png"
 import sellsImage from "../../../assets/images/ventatrack/sells.png"
 import authImage from "../../../assets/images/ventatrack/firebaseauth.png"
@@ -31,20 +31,11 @@ const VentaTrackDetail = () => {
                 description={`Cada vez que se escanea o se ingresa un código de barras se hace un llamado a la base de datos y se obtiene el producto con ese código. Automáticamente se agrega al panel y se suma en el total de venta. Si el producto ya está en el panel y se vuelve a ingresar, se autoincrementa la cantidad y se suma.\nEs posible eliminar productos del panel, además de agregar productos sin código de barras colocando simplemente su monto. Estos productos se visualizan como "Producto suelto" en el panel.\nLos productos persisten utilizando localStorage, cada modificación que se haga en el panel se realiza también en localStorage, por lo que es posible navegar por secciones, incluso cerrar la pestaña sin perder los productos.\nPara registrar un egreso de dinero, se coloca en el input de "Egreso de dinero" y se descuenta automáticamente de la caja del día, guardándose como detalle en el detalle de venta.`}
                 images={[panelSellImage]}
             />
-            <div className="divWithMaxWidth">
-                <h3 className="subtitleSection">Registrar nuevos productos</h3>
-                <p className="descriptionSecurity">Si se ingresa un código de barras que no se encuentra en la base de datos, automáticamente se muestra un formulario modal donde podemos agregar los datos del producto nuevo para agregarlo a la base de datos. Luego, el producto se agrega automáticamente al panel de ventas junto con el precio que se le fue colocado.</p>
-                <div style={{ display: "flex", justifyContent: "center" }}>
-                    <div className="imageContainerVentatrack">
-                        <img className="imageVentatrack" src={formNewProduct} alt="Formulario de producto" />
-                    </div>
-                </div>
-            </div>
             <SectionWithImages
                 color={color}
                 title="Gestión de productos"
-                description={`Es posible editar o eliminar cualquier producto. En la sección de "Productos" se encuentra una tabla con todos los productos registrados y sus datos correspondientes.\nSi damos click al botón de editar, se nos mostrará un formulario modal con los datos del producto, los cuales podremos editar, y al enviar el formulario se actualizarán los datos del producto.`}
-                images={[tableProductsImage]}
+                description={`Si se ingresa un código de barras que no se encuentra en la base de datos, automáticamente se muestra un formulario modal donde podemos agregar los datos del producto nuevo para agregarlo a la base de datos. Luego, el producto se agrega automáticamente al panel de ventas junto con el precio que se le fue colocado.\nEs posible editar o eliminar cualquier producto. En la sección de "Productos" se encuentra una tabla con todos los productos registrados y sus datos correspondientes.\nSi damos click al botón de editar, se nos mostrará un formulario modal con los datos del producto, los cuales podremos editar, y al enviar el formulario se actualizarán los datos del producto.`}
+                images={[tableProductsImage, formNewProductImage]}
             />
             <SectionWithImages
                 color={color}

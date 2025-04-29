@@ -92,11 +92,11 @@ const Projects = () => {
                     </div>
                     <div className="box turnero-box data-turnero-box" style={{ gridArea: "box-6" }}>
                         <div className="dataTurnero">
-                            <h2 className="titleProject">Turnero PAMI</h2>
+                            <h2 className="titleProject">Sistema de gestión de turnos</h2>
                             <p className="description descriptionTurnero">Sistema de gestión de turnos desarrollado para una clínica con varios doctores que atienden pacientes PAMI. Cuenta con un panel de administración, donde se pueden agregar, editar y eliminar doctores, administrar el calendario de turnos de los mismos, y visualizar los turnos pendientes dentro de una tabla.</p>
                         </div>
                         <div className="buttonsProject">
-                            <Button styleButton="primary" color="white" onClick={() => console.log("ver detalles")}>Ver detalles</Button>
+                            <Button styleButton="primary" color="white" onClick={() => navigate("/turnero-detail")}>Ver detalles</Button>
                         </div>
                     </div>
                     <div className="box turnero-box image-turnero-box" style={{ gridArea: "box-7" }}>
