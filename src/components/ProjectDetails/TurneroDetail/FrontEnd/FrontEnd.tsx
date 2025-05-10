@@ -1,6 +1,6 @@
 import "./FrontEnd.css"
 
-const FrontEnd = () => {
+const FrontEnd: React.FC<{ color: string }> = () => {
     return (
         <div className="divWithMaxWidth">
             <h1>Frontend</h1>

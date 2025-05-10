@@ -24,11 +24,11 @@ const TurneroDetail = () => {
                 color={color}
                 menu1={{
                     title: "Back End",
-                    element: <BackEnd />
+                    element: <BackEnd color={color} />
                 }}
                 menu2={{
                     title: "Front End",
-                    element: <FrontEnd />
+                    element: <FrontEnd color={color} />
                 }}
             />
         </div>
