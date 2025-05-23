@@ -1,5 +1,10 @@
 import "./BackEnd.css"
 import { NumberOneIcon, NumberTwoIcon, NumberThreeIcon, NumberFourIcon } from "../../../../common/Icons/Icons";
+import structureFoldersImage from "../../../../assets/images/turnero/estructuraCarpetasVerdadera.png"
+import structureProjectImage from "../../../../assets/images/turnero/estructuraProyecto.png"
+import verifyTokenImage from "../../../../assets/images/turnero/verifyTokenCode.png"
+import loginAdminImage from "../../../../assets/images/turnero/loginAdminCode.png"
+import databaseConfigImage from "../../../../assets/images/turnero/datosConexionDB.png"
 
 const BackEnd: React.FC<{ color: string }> = ({ color }) => {
     return (
@@ -11,126 +16,161 @@ const BackEnd: React.FC<{ color: string }> = ({ color }) => {
                 <div className="structureFoldersDescription">
                     <p>No es un Back End con mucha complejidad. Implementa las medidas de seguridad necesarias, enrutamiento, autenticación, una arquitectura RESTful y utiliza MySQL como base de datos.</p>
                     <p>El proyecto está organizado en tres rutas principales:</p>
-                    <ul>
-                        <li>
-                            <span className="spanUL">/appointments </span> donde se realiza la gestión de los turnos.
-                        </li>
-                        <li>
-                            <span className="spanUL">/login </span> donde se gestiona la autorización y autenticación.
-                        </li>
-                        <li>
-                            <span className="spanUL">/doctors </span> donde se realiza la gestión de doctores.
-                        </li>
-                    </ul>
+                    <div className="structureAndRoutesContainer">
+                        <ul>
+                            <li>
+                                <span className="spanUL">/appointments </span> donde se realiza la gestión de los turnos.
+                            </li>
+                            <li>
+                                <span className="spanUL">/login </span> donde se gestiona la autorización y autenticación.
+                            </li>
+                            <li>
+                                <span className="spanUL">/doctors </span> donde se realiza la gestión de doctores.
+                            </li>
+                        </ul>
+                        <div className="imageContainerTurnero">
+                            <img className="image" src={structureFoldersImage} alt="Estructura de carpetas" />
+                        </div>
+                        <div>
+                            <div className="imageContainerTurnero">
+                                <img className="image" src={structureProjectImage} alt="Estructura de carpetas" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="sectionContent">
-                <div style={{ borderBottom: `1px solid ${color}` }} className="titleSectionContainer">
+                <div style={{ borderBottom: `1px solid ${color}`, marginBottom: "0" }} className="titleSectionContainer">
                     <h2 className="titleSection">Características de seguridad</h2>
                 </div>
-                <h3 className="subtitleSection">Protección de contraseñas</h3>
-                <ul className="ulSteps">
-                    <li>
-                        Uso de bcrypt para el hash de contraseñas.
-                    </li>
-                    <li>
-                        Almacenamiento seguro en la base de datos.
-                    </li>
-                </ul>
-                <h3 className="subtitleSection">Autenticación JWT</h3>
-                <ul className="ulSteps">
-                    <li>
-                        Tokens firmados con una clave secreta.
-                    </li>
-                    <li>
-                        Información del usuario codificada en el token.
-                    </li>
-                    <li>
-                        Verificación de tokens en cada petición.
-                    </li>
-                </ul>
-                <h3 className="subtitleSection">Manejo de errores</h3>
-                <ul className="ulSteps">
-                    <li>
-                        Respuestas HTTP apropiadas para diferentes situaciones.
-                    </li>
-                    <li>
-                        Mensajes de error descriptivos.
-                    </li>
-                    <li>
-                        Manejo de excepciones en operaciones asincrónicas.
-                    </li>
-                </ul>
+                <div className="featuresSecurityContainer">
+                    <div>
+                        <h3 className="subtitleSection">Protección de contraseñas</h3>
+                        <ul className="ulSteps">
+                            <li>
+                                Uso de bcrypt para el hash de contraseñas.
+                            </li>
+                            <li>
+                                Almacenamiento seguro en la base de datos.
+                            </li>
+                        </ul>
+                        <h3 className="subtitleSection">Autenticación JWT</h3>
+                        <ul className="ulSteps">
+                            <li>
+                                Tokens firmados con una clave secreta.
+                            </li>
+                            <li>
+                                Información del usuario codificada en el token.
+                            </li>
+                            <li>
+                                Verificación de tokens en cada petición.
+                            </li>
+                        </ul>
+                        <h3 className="subtitleSection">Manejo de errores</h3>
+                        <ul className="ulSteps">
+                            <li>
+                                Respuestas HTTP apropiadas para diferentes situaciones.
+                            </li>
+                            <li>
+                                Mensajes de error descriptivos.
+                            </li>
+                            <li>
+                                Manejo de excepciones en operaciones asincrónicas.
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div className="imageContainerTurnero">
+                            <img className="image" src={verifyTokenImage} alt="Estructura de carpetas" />
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className="sectionContent">
                 <div style={{ borderBottom: `1px solid ${color}` }} className="titleSectionContainer">
                     <h2 className="titleSection">Sistema de autenticación</h2>
                 </div>
                 <p style={{ marginBottom: "2rem" }}>En el proyecto, implemento el siguiente sistema de seguridad:</p>
-                <h3 className="subtitleSection">Autenticación de usuarios</h3>
-                <p className="stepDescription">Ruta
-                    <span className="spanRoute" style={{
-                        backgroundColor: color,
-                        marginLeft: ".5rem",
-                        padding: ".1rem",
-                        borderRadius: "5px"
-                    }}>
-                        POST /login/login-admin
-                    </span>
-                </p>
-                <ul className="ulSteps">
-                    <li>
-                        Primero se verifican las credenciales contra la base de datos.
-                    </li>
-                    <li>
-                        Se utiliza bcrypt para comparar contraseñas hasheadas.
-                    </li>
-                    <li>
-                        Geneara un token JWT con información del usuraio.
-                    </li>
-                    <li>
-                        El token incluye: id, username y rol del administrador.
-                    </li>
-                </ul>
-                <h3 className="subtitleSection">Verificación de Token</h3>
-                <p className="stepDescription">Ruta
-                    <span className="spanRoute" style={{
-                        backgroundColor: color,
-                        marginLeft: ".5rem",
-                        padding: ".1rem",
-                        borderRadius: "5px"
-                    }}>
-                        GET /login/verify-token
-                    </span>
-                </p>
-                <ul className="ulSteps">
-                    <li>
-                        Verifica la validez del token.
-                    </li>
-                    <li>
-                        Se utiliza para proteger las rutas que requieren autenticación.
-                    </li>
-                </ul>
+                <div className="featuresSecurityContainer">
+                    <div>
+                        <h3 className="subtitleSection">Autenticación de usuarios</h3>
+                        <p className="stepDescription">Ruta
+                            <span className="spanRoute" style={{
+                                backgroundColor: color,
+                                marginLeft: ".5rem",
+                                padding: ".1rem",
+                                borderRadius: "5px"
+                            }}>
+                                POST /login/login-admin
+                            </span>
+                        </p>
+                        <ul className="ulSteps">
+                            <li>
+                                Primero se verifican las credenciales contra la base de datos.
+                            </li>
+                            <li>
+                                Se utiliza bcrypt para comparar contraseñas hasheadas.
+                            </li>
+                            <li>
+                                Geneara un token JWT con información del usuraio.
+                            </li>
+                            <li>
+                                El token incluye: id, username y rol del administrador.
+                            </li>
+                        </ul>
+                        <h3 className="subtitleSection">Verificación de Token</h3>
+                        <p className="stepDescription">Ruta
+                            <span className="spanRoute" style={{
+                                backgroundColor: color,
+                                marginLeft: ".5rem",
+                                padding: ".1rem",
+                                borderRadius: "5px"
+                            }}>
+                                GET /login/verify-token
+                            </span>
+                        </p>
+                        <ul className="ulSteps">
+                            <li>
+                                Verifica la validez del token.
+                            </li>
+                            <li>
+                                Se utiliza para proteger las rutas que requieren autenticación.
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="loginAdminImageContainer">
+                        <div className="imageContainerTurnero">
+                            <img className="image" src={loginAdminImage} alt="Estructura de carpetas" />
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className="sectionContent">
                 <div style={{ borderBottom: `1px solid ${color}` }} className="titleSectionContainer">
                     <h2 className="titleSection">Base de datos</h2>
                 </div>
-                <p>Utiliza MySQL con un pool de conexiones. La configuración se realiza mediante variables de entorno como:</p>
-                <ul className="ulSteps">
-                    <li>
-                        Host
-                    </li>
-                    <li>
-                        Usuario
-                    </li>
-                    <li>
-                        Contraseña
-                    </li>
-                    <li>
-                        Nombre de la base de datos
-                    </li>
-                </ul>
+                <div className="featuresSecurityContainer">
+                    <div>
+                        <p>Utiliza MySQL con un pool de conexiones. La configuración se realiza mediante variables de entorno como:</p>
+                        <ul className="ulSteps">
+                            <li>
+                                Host
+                            </li>
+                            <li>
+                                Usuario
+                            </li>
+                            <li>
+                                Contraseña
+                            </li>
+                            <li>
+                                Nombre de la base de datos
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="imageContainerTurnero databaseConfigImageContainer">
+                        <img className="image" src={databaseConfigImage} alt="Estructura de carpetas" />
+                    </div>
+                </div>
             </div>
             <div className="sectionContent">
                 <div style={{ borderBottom: `1px solid ${color}` }} className="titleSectionContainer">
@@ -185,7 +225,7 @@ const BackEnd: React.FC<{ color: string }> = ({ color }) => {
                     </div>
                 </div>
             </div>
-            <div className="sectionContent">
+            <div style={{ marginBottom: "2rem" }} className="sectionContent">
                 <div style={{ borderBottom: `1px solid ${color}` }} className="titleSectionContainer">
                     <h2 className="titleSection">Buenas prácticas implementadas</h2>
                 </div>

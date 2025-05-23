@@ -114,10 +114,10 @@ const Projects = () => {
                         <div className="divDataSportyMaxx">
                             <div className="dataSportyMaxx">
                                 <h2 className="titleProject">SportyMaxx</h2>
-                                <p className="description descriptionSportyMaxx">Comercio electrónico desarrollado para una empresa dedicada a la venta de ropa. Cuenta con interfaces para que  el administrador (dueño) pueda subir, editar y eliminar productos cuando desee.</p>
+                                <p className="description descriptionSportyMaxx">Comercio electrónico desarrollado para una empresa dedicada a la venta de ropa. Cuenta con interfaces para que  el administrador pueda subir, editar y eliminar productos cuando desee.</p>
                             </div>
                             <div className="buttonsProject buttonsSportyMaxx">
-                                <Button styleButton="primary" color="white" onClick={() => console.log("ver detalles")}>Ver detalles</Button>
+                                <Button styleButton="primary" color="white" onClick={() => navigate("/sportymaxx-detail")}>Ver detalles</Button>
                                 <div
                                     onMouseEnter={() => setIsOpenSelect2(true)}
                                     onMouseLeave={() => setIsOpenSelect2(false)}

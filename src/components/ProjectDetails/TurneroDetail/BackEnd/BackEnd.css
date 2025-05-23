@@ -5,3 +5,59 @@
         margin: 1rem 0;
     }
 }
+
+.sectionContent {
+    margin-bottom: 3rem;
+}
+
+.structureAndRoutesContainer {
+    display: flex;
+    gap: 2rem;
+}
+
+.imageContainerTurnero {
+    margin-top: 3rem;
+    padding: .2rem;
+    background-color: #3DA35D;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featuresSecurityContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.loginAdminImageContainer {
+    width: 50%;
+}
+
+.databaseConfigImageContainer {
+    margin-top: 0;
+}
+
+@media (max-width: 1200px) {
+
+    .structureAndRoutesContainer {
+        flex-direction: column;
+        gap: 0;
+
+        ul {
+            margin-bottom: 0;
+        }
+    }
+
+    .featuresSecurityContainer {
+        flex-direction: column;
+    }
+
+    .loginAdminImageContainer {
+        width: 100%;
+    }
+
+    .databaseConfigImageContainer {
+        margin-top: 2rem;
+    }
+}
