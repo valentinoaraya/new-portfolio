@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <div className="contact">
             <h2 className="titleContact">Contáctame</h2>
-            <p className="parrafContact">¿Tenés algún proyecto en mente o queŕes hablar sobre posibles oportunidades? No dudes en contactarme.</p>
+            <p className="parrafContact">¿Tenés algún proyecto en mente o querés hablar sobre posibles oportunidades? No dudes en contactarme.</p>
             <div className="cardsContact">
                 <div className="cardContact">
                     <div className="iconContainer">

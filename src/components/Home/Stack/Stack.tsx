@@ -7,32 +7,32 @@ const Stack = () => {
             <h2 className="titleStack">Mi stack</h2>
             <div className="stackIcons">
                 <ReactIcon
-                    width="100"
-                    height="100"
+                    width={window.innerWidth >= 960 ? "100" : "70"}
+                    height={window.innerWidth >= 960 ? "100" : "70"}
                 />
                 <NodeIcon
-                    width="100"
-                    height="100"
+                    width={window.innerWidth >= 960 ? "100" : "70"}
+                    height={window.innerWidth >= 960 ? "100" : "70"}
                 />
                 <ExpressIcon
-                    width="100"
-                    height="100"
+                    width={window.innerWidth >= 960 ? "100" : "70"}
+                    height={window.innerWidth >= 960 ? "100" : "70"}
                 />
                 <TypeScriptIcon
-                    width="100"
-                    height="100"
+                    width={window.innerWidth >= 960 ? "100" : "70"}
+                    height={window.innerWidth >= 960 ? "100" : "70"}
                 />
                 <MongoDBIcon
-                    width="100"
-                    height="100"
+                    width={window.innerWidth >= 960 ? "100" : "70"}
+                    height={window.innerWidth >= 960 ? "100" : "70"}
                 />
                 <FirebaseIcon
-                    width="100"
-                    height="100"
+                    width={window.innerWidth >= 960 ? "100" : "70"}
+                    height={window.innerWidth >= 960 ? "100" : "70"}
                 />
                 <GitIcon
-                    width="100"
-                    height="100"
+                    width={window.innerWidth >= 960 ? "100" : "70"}
+                    height={window.innerWidth >= 960 ? "100" : "70"}
                 />
             </div>
         </div>

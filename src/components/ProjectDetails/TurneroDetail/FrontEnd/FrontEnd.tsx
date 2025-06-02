@@ -1,10 +1,10 @@
 import "./FrontEnd.css"
 import SectionWithImages from "../../common/SectionWithImages/SectionWithImages";
-import clandarClientImage from "../../../../assets/images/turnero/calendarioCliente.jpg"
-import mainPageImage from "../../../../assets/images/turnero/paginaPrincipal.jpg"
-import adminPanelImage from "../../../../assets/images/turnero/adminPanel.png"
-import confirmFormImage from "../../../../assets/images/turnero/formularioConfirmacion.png"
-import doctorCalendarImage from "../../../../assets/images/turnero/calendarioDoctor.png"
+import clandarClientImage from "../../../../assets/images/turnero/frontend/calendarioCliente.webp"
+import mainPageImage from "../../../../assets/images/turnero/frontend/paginaPrincipal.webp"
+import adminPanelImage from "../../../../assets/images/turnero/frontend/adminPanel.webp"
+import confirmFormImage from "../../../../assets/images/turnero/frontend/formularioConfirmacion.webp"
+import doctorCalendarImage from "../../../../assets/images/turnero/frontend/calendarioDoctor.webp"
 
 const FrontEnd: React.FC<{ color: string }> = ({ color }) => {
     return (

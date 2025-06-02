@@ -1,14 +1,14 @@
 import "./VentaTrackDetail.css"
 import HeaderProject from "../common/HeaderProject/HeaderProject";
 import SectionWithImages from "../common/SectionWithImages/SectionWithImages";
-import backgroundVentaTrack from "../../../assets/images/ventatrack/ventatrackBackgroundImage.png"
-import mobileBackgroundVentaTrack from "../../../assets/images/ventatrack/mobileBackgroundVentatrack.png"
-import tableProductsImage from "../../../assets/images/ventatrack/tableProducts.png"
-import panelSellImage from "../../../assets/images/ventatrack/panelVentaTrack.png"
-import formNewProductImage from "../../../assets/images/ventatrack/formNewProduct2.png"
-import historyImage from "../../../assets/images/ventatrack/historial.png"
-import sellsImage from "../../../assets/images/ventatrack/sells.png"
-import authImage from "../../../assets/images/ventatrack/firebaseauth.png"
+import backgroundVentaTrack from "../../../assets/images/ventatrack/ventatrackBackgroundImage.webp"
+import mobileBackgroundVentaTrack from "../../../assets/images/ventatrack/mobileBackgroundVentatrack.webp"
+import tableProductsImage from "../../../assets/images/ventatrack/tableProducts.webp"
+import panelSellImage from "../../../assets/images/ventatrack/panelVentaTrack.webp"
+import formNewProductImage from "../../../assets/images/ventatrack/formNewProduct2.webp"
+import historyImage from "../../../assets/images/ventatrack/historial.webp"
+import sellsImage from "../../../assets/images/ventatrack/sells.webp"
+import authImage from "../../../assets/images/ventatrack/firebaseauth.webp"
 
 const VentaTrackDetail = () => {
     const color = "#a99985"

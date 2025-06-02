@@ -1,7 +1,7 @@
 import "./SportyMaxxDetail.css"
 import HeaderProject from "../common/HeaderProject/HeaderProject";
-import backgroundImage from "../../../assets/images/sportymaxx/backgroundImage.png"
-import mobileBackgroundImage from "../../../assets/images/sportymaxx/mobileBackgroundImage.png"
+import backgroundImage from "../../../assets/images/sportymaxx/backgroundImage.webp"
+import mobileBackgroundImage from "../../../assets/images/sportymaxx/mobileBackgroundImage.webp"
 import NavigationMenu from "../common/NavigationMenu/NavigationMenu";
 import BackEnd from "./BackEnd/BackEnd";
 import FrontEnd from "./FrontEnd/FrontEnd";

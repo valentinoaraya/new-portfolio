@@ -1,10 +1,10 @@
 import "./Projects.css"
 import { DollarIcon, CashStackIcon, BellIcon } from "../../../common/Icons/Icons";
 import Button from "../../../common/Button/Button";
-import panelBookify from "../../../assets/images/bookify/panelBookify.png"
-import panelVentaTrack from "../../../assets/images/ventatrack/panelImage.png"
+import panelBookify from "../../../assets/images/bookify/panelBookify.webp"
+import panelVentaTrack from "../../../assets/images/ventatrack/panelImage.webp"
 import panelTurnero from "../../../assets/images/turnero/calendarioDoctor.webp"
-import sportyMaxxPage from "../../../assets/images/sportymaxx/sportymaxxPage.png"
+import sportyMaxxPage from "../../../assets/images/sportymaxx/sportymaxxPage.webp"
 import SelectRepository from "../../../common/SelectRepository/SelectRepository";
 import Technologies from "../../../common/Technologies/Technologies";
 import { useState } from "react";
@@ -109,7 +109,6 @@ const Projects = () => {
                         <div className="divImageSportyMaxx">
                             <img className="imgSportyMaxx" src={sportyMaxxPage} alt="Página principal de SportyMaxx" />
                             <Technologies position="end" technologies={["react", "express", "node", "firebase"]} borderRadius="" />
-
                         </div>
                         <div className="divDataSportyMaxx">
                             <div className="dataSportyMaxx">
@@ -137,6 +136,14 @@ const Projects = () => {
                         <div className="image-container">
                             <img className="imageVentaTrack" src={sportyMaxxPage} alt="Página de SportyMaxx" />
                             <Technologies position="end" technologies={["react", "express", "node", "firebase"]} borderRadius="10px" />
+                        </div>
+                    </div>
+                    <div className="box spacetechnologies-box" style={{ gridArea: "box-10" }}>
+                        <div className="dataSpaceTechnologies">
+                            <h2 className="titleProject">I+D Tecnologías Espaciales</h2>
+                            <p className="description deleteDescription">Actualmente me encuentro trabajando en un proyecto de la universidad llamado "I+D Tecnologías Espaciales".</p>
+                            <p className="description">Se trata de un proyecto donde participamos varios alumnos de tercer y cuarto año de Ingeniería en Sistemas e Ingeniería Industrial. El objetivo principal es poder llegar a obtener y procesar imágenes satelitales, analizarlas con IA y Visión Computacional, para luego mediante el uso de modelos matemáticos y probabilísticos poder obtener conclusiones a futuro.</p>
+                            <p className="description">Particularmente me encuentro en el equipo de Visión Computacional y en el de Backend, desarrollando el software de la plataforma. Es un proyecto con una mirada a largo plazo, estamos trabajando con TypeScript y Python, pero esto puede cambiar en un futuro.</p>
                         </div>
                     </div>
                 </div>

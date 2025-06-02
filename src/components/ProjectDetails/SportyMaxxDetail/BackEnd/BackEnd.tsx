@@ -1,12 +1,12 @@
 import "./BackEnd.css"
 import { NumberOneIcon, NumberTwoIcon, NumberThreeIcon, NumberFourIcon } from "../../../../common/Icons/Icons"
-import imageStructure from "../../../../assets/images/sportymaxx/estructuraGeneral.png"
-import foldersStructure from "../../../../assets/images/sportymaxx/estructuraCarpetas.png"
-import foldersImage from "../../../../assets/images/sportymaxx/foldersImage.png"
-import verifyTokenImage from "../../../../assets/images/sportymaxx/verifytokenSporty.png"
-import processBuyImage from "../../../../assets/images/sportymaxx/procesoCompra.png"
-import uploadImage from "../../../../assets/images/sportymaxx/cargarImagen.png"
-import addProductImage from "../../../../assets/images/sportymaxx/addProduct.png"
+import imageStructure from "../../../../assets/images/sportymaxx/backend/estructuraGeneral.webp"
+import foldersStructure from "../../../../assets/images/sportymaxx/backend/estructuraCarpetas.webp"
+import foldersImage from "../../../../assets/images/sportymaxx/backend/foldersImage.webp"
+import verifyTokenImage from "../../../../assets/images/sportymaxx/backend/verifytokenSporty.webp"
+import processBuyImage from "../../../../assets/images/sportymaxx/backend/procesoCompra.webp"
+import uploadImage from "../../../../assets/images/sportymaxx/backend/cargarImagen.webp"
+import addProductImage from "../../../../assets/images/sportymaxx/backend/addProduct.webp"
 
 const BackEnd: React.FC<{ color: string }> = ({ color }) => {
     return (

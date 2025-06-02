@@ -1,10 +1,10 @@
 import "./BackEnd.css"
 import { NumberOneIcon, NumberTwoIcon, NumberThreeIcon, NumberFourIcon } from "../../../../common/Icons/Icons";
-import structureFoldersImage from "../../../../assets/images/turnero/estructuraCarpetasVerdadera.png"
-import structureProjectImage from "../../../../assets/images/turnero/estructuraProyecto.png"
-import verifyTokenImage from "../../../../assets/images/turnero/verifyTokenCode.png"
-import loginAdminImage from "../../../../assets/images/turnero/loginAdminCode.png"
-import databaseConfigImage from "../../../../assets/images/turnero/datosConexionDB.png"
+import structureFoldersImage from "../../../../assets/images/turnero/backend/estructuraCarpetas.webp"
+import structureProjectImage from "../../../../assets/images/turnero/backend/estructuraProyecto.webp"
+import verifyTokenImage from "../../../../assets/images/turnero/backend/verifyTokenCode.webp"
+import loginAdminImage from "../../../../assets/images/turnero/backend/loginAdminCode.webp"
+import databaseConfigImage from "../../../../assets/images/turnero/backend/datosConexionDB.webp"
 
 const BackEnd: React.FC<{ color: string }> = ({ color }) => {
     return (

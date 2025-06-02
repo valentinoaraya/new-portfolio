@@ -1,7 +1,7 @@
 import "./BookifyDetail.css"
 import HeaderProject from "../common/HeaderProject/HeaderProject";
-import backgroundBookify from "../../../assets/images/bookify/backgroundBookify.png"
-import backgroundMobileBookify from "../../../assets/images/bookify/backgroundMobileBookify.png"
+import backgroundBookify from "../../../assets/images/bookify/backgroundBookify.webp"
+import backgroundMobileBookify from "../../../assets/images/bookify/backgroundMobileBookify.webp"
 import BackEnd from "./BackEnd/BackEnd";
 import FrontEnd from "./FrontEnd/FrontEnd";
 import NavigationMenu from "../common/NavigationMenu/NavigationMenu";

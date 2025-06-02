@@ -1,11 +1,11 @@
 import "./FrontEnd.css"
 import SectionWithImages from "../../common/SectionWithImages/SectionWithImages";
-import mobileImage1 from "../../../../assets/images/sportymaxx/mobileImage1.png"
-import mobileImage2 from "../../../../assets/images/sportymaxx/mobileImage2.png"
-import adminInterfaceImage from "../../../../assets/images/sportymaxx/adminInterface.png"
-import addProductImage from "../../../../assets/images/sportymaxx/agregarProductoInterfaz.png"
-import updateProductImage from "../../../../assets/images/sportymaxx/updateProductInterface.png"
-import checkoutImage from "../../../../assets/images/sportymaxx/checkoutImage.png"
+import mobileImage1 from "../../../../assets/images/sportymaxx/frontend/mobileImage1.webp"
+import mobileImage2 from "../../../../assets/images/sportymaxx/frontend/mobileImage2.webp"
+import adminInterfaceImage from "../../../../assets/images/sportymaxx/frontend/adminInterface.webp"
+import addProductImage from "../../../../assets/images/sportymaxx/frontend/agregarProductoInterfaz.webp"
+import updateProductImage from "../../../../assets/images/sportymaxx/frontend/updateProductInterface.webp"
+import checkoutImage from "../../../../assets/images/sportymaxx/frontend/checkoutImage.webp"
 
 const FrontEnd: React.FC<{ color: string }> = ({ color }) => {
     return (

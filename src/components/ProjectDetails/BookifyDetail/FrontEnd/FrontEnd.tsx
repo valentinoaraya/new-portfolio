@@ -1,8 +1,8 @@
 import SectionWithImages from "../../common/SectionWithImages/SectionWithImages";
-import mobileImage1 from "../../../../assets/images/bookify/frontend/IMG_8455.png"
-import mobileImage2 from "../../../../assets/images/bookify/frontend/IMG_8456.png"
-import clientInterfaceImage from "../../../../assets/images/bookify/frontend/turnosDisponibles.png"
-import companyInterfaceImage from "../../../../assets/images/bookify/frontend/companyInterface.png"
+import mobileImage1 from "../../../../assets/images/bookify/frontend/mobileImage1.webp"
+import mobileImage2 from "../../../../assets/images/bookify/frontend/mobileImage2.webp"
+import clientInterfaceImage from "../../../../assets/images/bookify/frontend/turnosDisponibles.webp"
+import companyInterfaceImage from "../../../../assets/images/bookify/frontend/companyInterface.webp"
 
 const FrontEnd: React.FC<{ color: string }> = ({ color }) => {
     return (

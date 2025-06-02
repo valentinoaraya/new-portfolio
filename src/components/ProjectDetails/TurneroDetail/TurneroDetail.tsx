@@ -1,7 +1,7 @@
 import "./TurneroDetail.css"
 import HeaderProject from "../common/HeaderProject/HeaderProject";
-import backgroundImage from "../../../assets/images/turnero/backgroundTurnero.png"
-import mobileBackgroundImage from "../../../assets/images/turnero/mobileBackgroundTurnero.png"
+import backgroundImage from "../../../assets/images/turnero/backgroundTurnero.webp"
+import mobileBackgroundImage from "../../../assets/images/turnero/mobileBackgroundTurnero.webp"
 import NavigationMenu from "../common/NavigationMenu/NavigationMenu";
 import BackEnd from "./BackEnd/BackEnd";
 import FrontEnd from "./FrontEnd/FrontEnd";
