@@ -1,54 +1,57 @@
-# React + TypeScript + Vite
+# Valentino Araya - Portafolio Personal 💼
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido a mi portafolio personal, donde presento mis proyectos, habilidades y experiencia como Full Stack Developer. Este portafolio está diseñado para mostrar mi trabajo de manera organizada y atractiva, utilizando las últimas tecnologías en desarrollo web.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19**: Framework de JavaScript para construir interfaces de usuario
+- **TypeScript**: Superset tipado de JavaScript
+- **Vite**: Herramienta de construcción moderna y rápida
+- **React Router DOM**: Para el manejo de rutas en la aplicación
+- **ESLint**: Para mantener un código limpio y consistente
 
-## Expanding the ESLint configuration
+## 📦 Instalación
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. Clona el repositorio:
+```bash
+git clone [URL_DEL_REPOSITORIO]
+cd new-portfolio
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+2. Instala las dependencias:
+```bash
+pnpm install
 ```
+
+## 🛠️ Scripts Disponibles
+
+- `pnpm dev` - Inicia el servidor de desarrollo
+- `pnpm build` - Construye la aplicación para producción
+- `pnpm preview` - Previsualiza la versión de producción localmente
+- `pnpm lint` - Ejecuta el linter para verificar el código
+
+## 🏗️ Estructura del Proyecto
+
+```
+new-portfolio/
+├── src/           # Código fuente de la aplicación
+├── public/        # Archivos estáticos
+├── node_modules/  # Dependencias
+└── ...
+```
+
+## 🚀 Despliegue
+
+El proyecto está configurado para ser desplegado en Vercel. La configuración se encuentra en el archivo `vercel.json`.
+
+## 📝 Licencia
+
+Este proyecto es de uso personal y privado.
+
+## 👨‍💻 Autor
+
+Valentino - Desarrollador Web Full Stack
+
+---
+
+Para cualquier consulta o sugerencia, no dudes en contactarme.
