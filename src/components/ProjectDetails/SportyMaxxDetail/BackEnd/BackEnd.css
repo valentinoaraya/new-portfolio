@@ -1,0 +1,20 @@
+.imageContainerSportymaxx {
+    padding: .2rem;
+    background-color: #CED4DA;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitleSectionSporty {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--rosa);
+}
+
+@media (max-width: 1200px) {
+    .imageContainerSportymaxx {
+        margin-top: 2rem;
+    }
+}
