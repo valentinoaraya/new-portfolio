@@ -13,7 +13,7 @@ const Hero = () => {
                 </div>
                 <div className="heroButtons">
                     <Button
-                        onClick={() => window.open("https://drive.google.com/file/d/16zTUe579L3cNeXvUdB0xngfRQ9qGgcY6/view?usp=sharing", '_blank')}
+                        onClick={() => window.open("https://drive.google.com/file/d/1XIl0_KhC2BB8wKfOHyNP1nGUj63uqSYI/view?usp=sharing", '_blank')}
                         styleButton="primary"
                         arrow
                     >

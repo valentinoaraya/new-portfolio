@@ -6,3 +6,10 @@
     margin: 0 auto;
     padding: 0 2rem;
 }
+
+@media (max-width: 650px) {
+    .divWithMaxWidth {
+        width: calc(100% - 2rem);
+        padding: 0 1rem;
+    }
+}
